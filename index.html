@@ -389,10 +389,34 @@
                 <div class="card">
                     <p>We are honored to have our research on SiLVIA recognized with the Best Paper Award in Safety, Security, and Rescue Robotics at IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) 2019.</p>
                     <div class="award-image">
-                        <img src="images/iros.jpeg" alt="IROS Award" style="max-width: 50%; @media not all and (min-resolution:.001dpcm) { @supports (-webkit-appearance:none) { max-width: 70%; }} height: auto; margin-top: 1.5rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                        <img src="images/iros.jpeg" alt="IROS Award" style="max-width: 50%; height: auto; margin-top: 1.5rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
                     </div>
                 </div>
             </section>
+            <style>
+                .award-image img {
+                    max-width: 50% !important;
+                    height: auto;
+                    margin-top: 1.5rem;
+                    border-radius: 8px;
+                    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                }
+            
+                @media screen and (max-device-width: 480px) {
+                    .award-image img {
+                        max-width: 90% !important; /* Much larger for mobile */
+                    }
+                }
+            
+                /* Safari-specific styles */
+                @media not all and (min-resolution:.001dpcm) { 
+                    @supports (-webkit-appearance:none) {
+                        .award-image img {
+                            max-width: 70% !important;
+                        }
+                    }
+                }
+            </style>
     
             <!-- Recognition in Academic Literature -->
             <section id="recognition">
