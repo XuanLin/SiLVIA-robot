@@ -144,10 +144,9 @@
             grid-template-columns: repeat(3, 1fr);
         }
     
-        /* Media query for mobile devices */
-        @media (max-width: 480px) {
+        @media screen and (max-device-width: 480px) {
             .capabilities-grid {
-                grid-template-columns: 1fr;
+                grid-template-columns: 1fr !important;
             }
         }
 
