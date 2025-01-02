@@ -3,6 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SiLVIA (Six Legged Vehicle with Intelligent Articulation) is an innovative hexapod robot developed at UCLA's RoMeLa. This wall-climbing robot features unique capabilities including angled wall climbing, obstacle avoidance, and advanced motion planning.">
+    <meta name="keywords" content="SiLVIA, robot, hexapod robot, wall-climbing robot, RoMeLa, UCLA robotics, Six Legged Vehicle with Intelligent Articulation, climbing robot, rescue robot">
+    <meta name="author" content="Xuan Lin">
+    
+    <!-- Open Graph tags for better social media sharing -->
+    <meta property="og:title" content="SiLVIA Robot - Advanced Wall-Climbing Hexapod | UCLA RoMeLa">
+    <meta property="og:description" content="SiLVIA is a state-of-the-art hexapod robot capable of climbing angled walls and navigating complex environments, developed at UCLA's Robotics Lab.">
+    <meta property="og:image" content="images/silvia.png">
+    <meta property="og:url" content="https://xuanlin.github.io/SiLVIA-website/">
     <title>Project SiLVIA - Six Legged Vehicle with Intelligent Articulation</title>
     <style>
         /* Reset and base styles */
@@ -177,221 +186,232 @@
     </style>
 </head>
 <body>
-    <!-- Hero Section -->
-    <div class="hero">
-        <video class="hero-video" autoplay muted loop>
-            <source src="videos/silvia.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <h1>Project <em>SiLVIA</em></h1>
-        <h2>Six Legged Vehicle with Intelligent Articulation</h2>
-    </div>
+    <header role="banner">
+        <!-- Hero Section -->
+        <div class="hero">
+            <video class="hero-video" autoplay muted loop>
+                <source src="videos/silvia.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h1>Project <em>SiLVIA</em></h1>
+            <h2>Six Legged Vehicle with Intelligent Articulation</h2>
+        </div>
+    </header>
 
-    <div class="container">
-        <!-- Introduction -->
-        <section id="introduction">
-            <h2 class="section-title">Introduction</h2>
-            <div class="intro-content">
-                <div class="intro-text">
-                    <p><strong>SiLVIA (Six Legged Vehicle with Intelligent Articulation)</strong> is a hexapod robot designed for robotics research. I developed it between 2017 and 2019 during my master's studies at the Robotics and Mechanisms Laboratory (RoMeLa), UCLA. While SiLVIA has a conventional hexapod configuration, its exceptional strength and stability enable unique capabilities, such as climbing between two walls, distinguishing it from typical hexapod robots.</p>
-                    <p>This project led to the publication of over five papers, including one that received the <strong>Best Paper Award in Safety, Security, and Rescue Robotics</strong> at <strong>IEEE IROS 2019</strong>. SiLVIA was also featured in the Global Safe City Seoul Promotional Video, titled <em>"What makes Seoul a safe city in the post-COVID-19 era?"</em>, produced by the Seoul city government.</p>
-                </div>
-                <div class="intro-image">
-                    <img src="images/silvia.png" alt="SiLVIA Robot">
-                </div>
-            </div>
-        </section>
-
-        <!-- Robot Capabilities -->
-        <section id="capabilities">
-            <h2 class="section-title">Robot Capabilities</h2>
-            <div class="capabilities-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 20px;">
-                <!-- First Row -->
-                <div class="capability-card">
-                    <video autoplay muted loop controls width="100%" style="height: 200px; object-fit: cover;">
-                        <source src="videos/angle_wall.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <div class="content">
-                        <p>Climbing Between Irregular or Angled Walls</p>
+    <main role="main">
+        <div class="container">
+            <!-- Introduction -->
+            <section id="introduction">
+                <h2 class="section-title">Introduction</h2>
+                <div class="intro-content">
+                    <div class="intro-text">
+                        <p><strong>SiLVIA (Six Legged Vehicle with Intelligent Articulation)</strong> is a hexapod robot designed for robotics research. I developed it between 2017 and 2019 during my master's studies at the Robotics and Mechanisms Laboratory (RoMeLa), UCLA. While SiLVIA has a conventional hexapod configuration, its exceptional strength and stability enable unique capabilities, such as climbing between two walls, distinguishing it from typical hexapod robots.</p>
+                        <p>This project led to the publication of over five papers, including one that received the <strong>Best Paper Award in Safety, Security, and Rescue Robotics</strong> at <strong>IEEE IROS 2019</strong>. SiLVIA was also featured in the Global Safe City Seoul Promotional Video, titled <em>"What makes Seoul a safe city in the post-COVID-19 era?"</em>, produced by the Seoul city government.</p>
+                    </div>
+                    <div class="intro-image">
+                        <img src="images/silvia.png" alt="SiLVIA Robot">
                     </div>
                 </div>
-        
-                <div class="capability-card">
-                    <video autoplay muted loop controls width="100%" style="height: 200px; object-fit: cover;">
-                        <source src="videos/obstacle_avoidance.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <div class="content">
-                        <p>Climbing with Obstacle Avoidance Using Mixed-Integer Programming</p>
-                    </div>
-                </div>
-        
-                <div class="capability-card">
-                    <video autoplay muted loop controls width="100%" style="height: 200px; object-fit: cover;">
-                        <source src="videos/tripod.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <div class="content">
-                        <p>Fast and Risky Tripod Climbing Modeled by Gaussian Process</p>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="capabilities-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
-                <!-- Second Row -->
-                <div class="capability-card">
-                    <video autoplay muted loop controls width="100%" style="height: 200px; object-fit: cover;">
-                        <source src="videos/complementary.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <div class="content">
-                        <p>Non-Traditional Gait Planned Using Complementary Constraints</p>
-                    </div>
-                </div>
-        
-                <div class="capability-card">
-                    <video autoplay muted loop controls width="100%" style="height: 200px; object-fit: cover;">
-                        <source src="videos/tube.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <div class="content">
-                        <p>Climbing Inside Tubes for Inspection</p>
-                    </div>
-                </div>
-        
-                <div class="capability-card">
-                    <video autoplay muted loop controls width="100%" style="height: 200px; object-fit: cover;">
-                        <source src="videos/avoid_risk.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <div class="content">
-                        <p>Climbing While Avoiding Low-Friction Contacts Modeled by Gaussian Process</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Publications -->
-        <section id="publications">
-            <h2 class="section-title">Publications</h2>
-            <div class="publications-list">
-                <div class="paper-card">
-                    <h3>Optimization Based Motion Planning for Multi-Limbed Vertical Climbing Robots</h3>
-                    <p class="authors">Xuan Lin, Jingwen Zhang, Junjie Shen, Gabriel Fernandez, Dennis W Hong</p>
-                    <p class="venue">2019 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</p>
-                    <p class="award"><strong>Best Paper Award on Safety, Security, and Rescue Robotics</strong></p>
-                </div>
-
-                <div class="paper-card">
-                    <h3>Multi-Limbed Robot Vertical Two Wall Climbing Based on Static Indeterminacy Modeling and Feasibility Region Analysis</h3>
-                    <p class="authors">Xuan Lin, Hari Krishnan, Yao Su, Dennis W Hong</p>
-                    <p class="venue">2018 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</p>
-                </div>
-
-                <div class="paper-card">
-                    <h3>Risk-Aware Motion Planning for a Limbed Robot with Stochastic Gripping Forces Using Nonlinear Programming</h3>
-                    <p class="authors">Y Shirai, Xuan Lin, Y Tanaka, A Mehta, D Hong</p>
-                    <p class="venue">2020 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)/IEEE Robotics and Automation Letters 5 (4), 4994-5001</p>
-                </div>
-
-                <div class="paper-card">
-                    <h3>Transition Motion Planning for Multi-Limbed Vertical Climbing Robots Using Complementarity Constraints</h3>
-                    <p class="authors">Jingwen Zhang, Xuan Lin, and Dennis W Hong</p>
-                    <p class="venue">2021 IEEE International Conference on Robotics and Automation (ICRA)</p>
-                </div>
-
-                <div class="paper-card">
-                    <h3>Designing Multi-Stage Coupled Convex Programming with Data Driven McCormick Envelope Relaxations for Motion Planning</h3>
-                    <p class="authors">Xuan Lin, Min Sung Ahn, and Dennis W Hong</p>
-                    <p class="venue">2021 IEEE International Conference on Robotics and Automation (ICRA)</p>
-                </div>
-            </div>
-        </section>
-
-        <style>
-            .publications-list {
-                display: flex;
-                flex-direction: column;
-                gap: 1.5rem;
-            }
-
-            .paper-card {
-                background: white;
-                padding: 1.5rem;
-                border-radius: 8px;
-                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            }
-
-            .paper-card h3 {
-                color: #1a1a1a;
-                font-size: 1.2rem;
-                margin-bottom: 0.5rem;
-            }
-
-            .paper-card .authors {
-                color: #444;
-                font-size: 1rem;
-                margin-bottom: 0.3rem;
-            }
-
-            .paper-card .venue {
-                color: #666;
-                font-style: italic;
-            }
-
-            .paper-card .award {
-                color: #2e7d32;
-                margin-top: 0.5rem;
-            }
-        </style>
-
-        <section id="awards">
-            <h2 class="section-title">Awards and Recognition</h2>
-            <div class="card">
-                <p>We are honored to have our research on SiLVIA recognized with the Best Paper Award in Safety, Security, and Rescue Robotics at IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) 2019.</p>
-                <div class="award-image">
-                    <img src="images/iros.jpeg" alt="IROS Award" style="max-width: 60%; height: auto; margin-top: 1.5rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                </div>
-            </div>
-        </section>
-
-        <!-- Recognition in Academic Literature -->
-        <section id="recognition">
-            <h2 class="section-title">Recognition in Academic Literature</h2>
-            <div class="card">
-                <p>SiLVIA has been recognized in academic literature for its innovative hardware and algorithms, enabling it to climb angled walls, navigate uneven surfaces, and avoid obstacles—capabilities rarely demonstrated by other wall-climbing robots. Notably:</p>
-                <ul style="margin-top: 1rem; margin-left: 1.5rem;">
-                    <li style="margin-bottom: 0.5rem;"><em>"Conventional, Heuristic and Learning-Based Robot Motion Planning: Reviewing Frameworks of Current Practical Significance"</em> (Machines, 2023)</li>
-                    <li><em>"Trends in the Control of Hexapod Robots: A Survey"</em> (Robotics, 2021)</li>
-                </ul>
-            </div>
-        </section>
-        
-        <!-- Media Exposure -->
-        <section id="media">
-            <h2 class="section-title">Media Exposure</h2>
-            <div class="card">
-                <p>SiLVIA was featured as a firefighter robot in the Global Safe City Seoul Promotional Video, titled <em>"What makes Seoul a safe city in the post-COVID-19 era?"</em>, produced by the Seoul city government.</p>
-                <div class="video-container" style="margin-top: 1.5rem;">
-                    <a href="https://youtu.be/VG91QGXoRyI?si=MEGwgLUrNIK8HKS-&t=34" target="_blank" style="text-decoration: none; color: inherit;">
-                        <img src="images/videoframe_34884.png" alt="Seoul Safe City Video Thumbnail" style="width: 40%; height: auto; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                        <div style="margin-top: 0.5rem;">
-                            <span style="color: #065fd4;">► Watch on YouTube</span>
+            </section>
+    
+            <!-- Robot Capabilities -->
+            <section id="capabilities">
+                <h2 class="section-title">Robot Capabilities</h2>
+                <div class="capabilities-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 20px;">
+                    <!-- First Row -->
+                    <div class="capability-card">
+                        <video autoplay muted loop controls width="100%" style="height: 200px; object-fit: cover;">
+                            <source src="videos/angle_wall.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="content">
+                            <p>Climbing Between Irregular or Angled Walls</p>
                         </div>
-                    </a>
+                    </div>
+            
+                    <div class="capability-card">
+                        <video autoplay muted loop controls width="100%" style="height: 200px; object-fit: cover;">
+                            <source src="videos/obstacle_avoidance.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="content">
+                            <p>Climbing with Obstacle Avoidance Using Mixed-Integer Programming</p>
+                        </div>
+                    </div>
+            
+                    <div class="capability-card">
+                        <video autoplay muted loop controls width="100%" style="height: 200px; object-fit: cover;">
+                            <source src="videos/tripod.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="content">
+                            <p>Fast and Risky Tripod Climbing Modeled by Gaussian Process</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </section>
+            
+                <div class="capabilities-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
+                    <!-- Second Row -->
+                    <div class="capability-card">
+                        <video autoplay muted loop controls width="100%" style="height: 200px; object-fit: cover;">
+                            <source src="videos/complementary.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="content">
+                            <p>Non-Traditional Gait Planned Using Complementary Constraints</p>
+                        </div>
+                    </div>
+            
+                    <div class="capability-card">
+                        <video autoplay muted loop controls width="100%" style="height: 200px; object-fit: cover;">
+                            <source src="videos/tube.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="content">
+                            <p>Climbing Inside Tubes for Inspection</p>
+                        </div>
+                    </div>
+            
+                    <div class="capability-card">
+                        <video autoplay muted loop controls width="100%" style="height: 200px; object-fit: cover;">
+                            <source src="videos/avoid_risk.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="content">
+                            <p>Climbing While Avoiding Low-Friction Contacts Modeled by Gaussian Process</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- Publications -->
+            <section id="publications">
+                <h2 class="section-title">Publications</h2>
+                <div class="publications-list">
+                    <div class="paper-card">
+                        <h3>Optimization Based Motion Planning for Multi-Limbed Vertical Climbing Robots</h3>
+                        <p class="authors">Xuan Lin, Jingwen Zhang, Junjie Shen, Gabriel Fernandez, Dennis W Hong</p>
+                        <p class="venue">2019 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</p>
+                        <p class="award"><strong>Best Paper Award on Safety, Security, and Rescue Robotics</strong></p>
+                    </div>
+    
+                    <div class="paper-card">
+                        <h3>Multi-Limbed Robot Vertical Two Wall Climbing Based on Static Indeterminacy Modeling and Feasibility Region Analysis</h3>
+                        <p class="authors">Xuan Lin, Hari Krishnan, Yao Su, Dennis W Hong</p>
+                        <p class="venue">2018 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</p>
+                    </div>
+    
+                    <div class="paper-card">
+                        <h3>Risk-Aware Motion Planning for a Limbed Robot with Stochastic Gripping Forces Using Nonlinear Programming</h3>
+                        <p class="authors">Y Shirai, Xuan Lin, Y Tanaka, A Mehta, D Hong</p>
+                        <p class="venue">2020 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)/IEEE Robotics and Automation Letters 5 (4), 4994-5001</p>
+                    </div>
+    
+                    <div class="paper-card">
+                        <h3>Transition Motion Planning for Multi-Limbed Vertical Climbing Robots Using Complementarity Constraints</h3>
+                        <p class="authors">Jingwen Zhang, Xuan Lin, and Dennis W Hong</p>
+                        <p class="venue">2021 IEEE International Conference on Robotics and Automation (ICRA)</p>
+                    </div>
+    
+                    <div class="paper-card">
+                        <h3>Designing Multi-Stage Coupled Convex Programming with Data Driven McCormick Envelope Relaxations for Motion Planning</h3>
+                        <p class="authors">Xuan Lin, Min Sung Ahn, and Dennis W Hong</p>
+                        <p class="venue">2021 IEEE International Conference on Robotics and Automation (ICRA)</p>
+                    </div>
+                </div>
+            </section>
 
-        <!-- Contributors -->
-        <section id="contributors">
-            <h2 class="section-title">Contributors</h2>
-            <div class="card">
-                [Contributors information]
-            </div>
-        </section>
+            <style>
+                .publications-list {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1.5rem;
+                }
+    
+                .paper-card {
+                    background: white;
+                    padding: 1.5rem;
+                    border-radius: 8px;
+                    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                }
+    
+                .paper-card h3 {
+                    color: #1a1a1a;
+                    font-size: 1.2rem;
+                    margin-bottom: 0.5rem;
+                }
+    
+                .paper-card .authors {
+                    color: #444;
+                    font-size: 1rem;
+                    margin-bottom: 0.3rem;
+                }
+    
+                .paper-card .venue {
+                    color: #666;
+                    font-style: italic;
+                }
+    
+                .paper-card .award {
+                    color: #2e7d32;
+                    margin-top: 0.5rem;
+                }
+            </style>
+    
+            <section id="awards">
+                <h2 class="section-title">Awards and Recognition</h2>
+                <div class="card">
+                    <p>We are honored to have our research on SiLVIA recognized with the Best Paper Award in Safety, Security, and Rescue Robotics at IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) 2019.</p>
+                    <div class="award-image">
+                        <img src="images/iros.jpeg" alt="IROS Award" style="max-width: 60%; height: auto; margin-top: 1.5rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                    </div>
+                </div>
+            </section>
+    
+            <!-- Recognition in Academic Literature -->
+            <section id="recognition">
+                <h2 class="section-title">Recognition in Academic Literature</h2>
+                <div class="card">
+                    <p>SiLVIA has been recognized in academic literature for its innovative hardware and algorithms, enabling it to climb angled walls, navigate uneven surfaces, and avoid obstacles—capabilities rarely demonstrated by other wall-climbing robots. Notably:</p>
+                    <ul style="margin-top: 1rem; margin-left: 1.5rem;">
+                        <li style="margin-bottom: 0.5rem;"><em>"Conventional, Heuristic and Learning-Based Robot Motion Planning: Reviewing Frameworks of Current Practical Significance"</em> (Machines, 2023)</li>
+                        <li><em>"Trends in the Control of Hexapod Robots: A Survey"</em> (Robotics, 2021)</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <!-- Media Exposure -->
+            <section id="media">
+                <h2 class="section-title">Media Exposure</h2>
+                <div class="card">
+                    <p>SiLVIA was featured as a firefighter robot in the Global Safe City Seoul Promotional Video, titled <em>"What makes Seoul a safe city in the post-COVID-19 era?"</em>, produced by the Seoul city government.</p>
+                    <div class="video-container" style="margin-top: 1.5rem;">
+                        <a href="https://youtu.be/VG91QGXoRyI?si=MEGwgLUrNIK8HKS-&t=34" target="_blank" style="text-decoration: none; color: inherit;">
+                            <img src="images/videoframe_34884.png" alt="Seoul Safe City Video Thumbnail" style="width: 40%; height: auto; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                            <div style="margin-top: 0.5rem;">
+                                <span style="color: #065fd4;">► Watch on YouTube</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- Contributors -->
+            <section id="contributors">
+                <h2 class="section-title">Contributors</h2>
+                <div class="card">
+                    [Contributors information]
+                </div>
+            </section>
         
-    </div>
+        </div>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="container">
+            <p>© 2024 Xuan Lin - RoMeLa, UCLA. All rights reserved.</p>
+        </div>
+    </footer>
+        
 </body>
 </html>
