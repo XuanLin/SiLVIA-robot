@@ -220,16 +220,79 @@
             </div>
         </section>
 
-        <!-- Related Papers -->
-        <section id="papers">
-            <h2 class="section-title">Related Papers</h2>
-            <div class="card">
-                <h3>Paper Title</h3>
-                <p>Authors, Conference/Journal, Year</p>
-                <p>[Abstract or description]</p>
+        <!-- Publications -->
+        <section id="publications">
+            <h2 class="section-title">Publications</h2>
+            <div class="publications-list">
+                <div class="paper-card">
+                    <h3>Optimization Based Motion Planning for Multi-Limbed Vertical Climbing Robots</h3>
+                    <p class="authors">Xuan Lin, Jingwen Zhang, Junjie Shen, Gabriel Fernandez, Dennis W Hong</p>
+                    <p class="venue">2019 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</p>
+                    <p class="award"><strong>Best Paper Award on Safety, Security, and Rescue Robotics</strong></p>
+                </div>
+
+                <div class="paper-card">
+                    <h3>Multi-Limbed Robot Vertical Two Wall Climbing Based on Static Indeterminacy Modeling and Feasibility Region Analysis</h3>
+                    <p class="authors">Xuan Lin, Hari Krishnan, Yao Su, Dennis W Hong</p>
+                    <p class="venue">2018 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</p>
+                </div>
+
+                <div class="paper-card">
+                    <h3>Risk-Aware Motion Planning for a Limbed Robot with Stochastic Gripping Forces Using Nonlinear Programming</h3>
+                    <p class="authors">Y Shirai, Xuan Lin, Y Tanaka, A Mehta, D Hong</p>
+                    <p class="venue">2020 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)/IEEE Robotics and Automation Letters 5 (4), 4994-5001</p>
+                </div>
+
+                <div class="paper-card">
+                    <h3>Transition Motion Planning for Multi-Limbed Vertical Climbing Robots Using Complementarity Constraints</h3>
+                    <p class="authors">Jingwen Zhang, Xuan Lin, and Dennis W Hong</p>
+                    <p class="venue">2021 IEEE International Conference on Robotics and Automation (ICRA)</p>
+                </div>
+
+                <div class="paper-card">
+                    <h3>Designing Multi-Stage Coupled Convex Programming with Data Driven McCormick Envelope Relaxations for Motion Planning</h3>
+                    <p class="authors">Xuan Lin, Min Sung Ahn, and Dennis W Hong</p>
+                    <p class="venue">2021 IEEE International Conference on Robotics and Automation (ICRA)</p>
+                </div>
             </div>
-            <!-- Add more papers as needed -->
         </section>
+
+        <style>
+            .publications-list {
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+
+            .paper-card {
+                background: white;
+                padding: 1.5rem;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+
+            .paper-card h3 {
+                color: #1a1a1a;
+                font-size: 1.2rem;
+                margin-bottom: 0.5rem;
+            }
+
+            .paper-card .authors {
+                color: #444;
+                font-size: 1rem;
+                margin-bottom: 0.3rem;
+            }
+
+            .paper-card .venue {
+                color: #666;
+                font-style: italic;
+            }
+
+            .paper-card .award {
+                color: #2e7d32;
+                margin-top: 0.5rem;
+            }
+        </style>
 
         <!-- Contributors -->
         <section id="contributors">
