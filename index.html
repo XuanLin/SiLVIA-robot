@@ -22,14 +22,30 @@
         .hero {
             background: #000;
             color: white;
-            padding: 2rem 0;
             text-align: center;
+            position: relative;
+            overflow: hidden;
         }
 
         .hero-video {
-            max-width: 1200px;
-            margin: 0 auto 2rem;
             width: 100%;
+            display: block;
+            margin: 0;
+        }
+
+        .hero h1, .hero h2 {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero h1 {
+            bottom: 30%;
+        }
+
+        .hero h2 {
+            bottom: 20%;
         }
 
         .hero h1 {
