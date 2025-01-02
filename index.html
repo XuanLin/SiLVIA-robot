@@ -87,6 +87,40 @@
             padding-bottom: 0.5rem;
         }
 
+        /* Introduction layout */
+        .intro-content {
+            display: flex;
+            gap: 2rem;
+            align-items: start;
+        }
+
+        .intro-text {
+            flex: 3;
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+
+        .intro-image {
+            flex: 2;
+            max-width: 400px;
+        }
+
+        .intro-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        @media (max-width: 768px) {
+            .intro-content {
+                flex-direction: column;
+            }
+            .intro-image {
+                max-width: 100%;
+            }
+        }
+
         /* Capabilities grid */
         .capabilities-grid {
             display: grid;
@@ -157,8 +191,14 @@
         <!-- Introduction -->
         <section id="introduction">
             <h2 class="section-title">Introduction</h2>
-            <div class="card">
-                [Your introduction text here]
+            <div class="intro-content">
+                <div class="intro-text">
+                    <p><strong>SiLVIA (Six Legged Vehicle with Intelligent Articulation)</strong> is a hexapod robot designed for robotics research. I developed it between 2017 and 2019 during my master's studies at the <strong>Robotics and Mechanisms Laboratory (RoMeLa)</strong>, UCLA. While SiLVIA has a conventional hexapod configuration, its exceptional strength and stability enable unique capabilities, such as climbing between two walls, distinguishing it from typical hexapod robots.</p>
+                    <p>This project led to the publication of over five papers, including one that received the <strong>Best Paper Award in Safety, Security, and Rescue Robotics</strong> at <strong>IEEE IROS 2019</strong>. SiLVIA was also featured in the <strong>Global Safe City Seoul Promotional Video</strong>, titled <em>"What makes Seoul a safe city in the post-COVID-19 era?"</em>, produced by the Seoul city government.</p>
+                </div>
+                <div class="intro-image">
+                    <img src="images/silvia.png" alt="SiLVIA Robot">
+                </div>
             </div>
         </section>
 
